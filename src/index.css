@@ -9,7 +9,7 @@
 :root {
   --clr-white: #FFFFFF;
   --clr-black: #202020;
-  --clr-blue: #6C63FF;
+  --clr-blue: #3283ee;
   --clr-blue-2: #4c46b6;
 }
 
@@ -160,7 +160,7 @@ form input[type="submit"]:hover {
 /* -- TEXT -- */
 p {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 
@@ -168,4 +168,123 @@ p {
   .form {
     flex-direction: column;
   }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  color: #4b6587;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2rem;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  color: #4b6587;
+  margin-bottom: 5px;
+}
+
+input[type='text'] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  font-size: 1rem;
+}
+
+.create-btn {
+  background-color: #4b6587;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-btn:hover {
+  background-color: #2e4a66;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.image-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  border: 2px dashed #ced4da;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.image-placeholder p {
+  font-size: 1.2rem;
+  color: #4b6587;
+  margin-top: 10px;
+}
+
+img {
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: #4b6587;
+}
+
+a:hover {
+  color: #2e4a66;
 }
